@@ -1,27 +1,17 @@
 # Convenções de Nomenclatura - Aplicação de Controle Financeiro
 
 ## Estrutura do Projeto
-
 ```
 finance_app/
-├── app.py                # Ponto de entrada principal da aplicação
 ├── database/             # Módulo para conectar e interagir com o banco de dados
-│   ├── __init__.py
 │   ├── db_connector.py   # Conexão com o banco de dados
-│   └── models.py         # Definição de modelos/tabelas
-├── utils/                # Funções auxiliares
-│   ├── __init__.py
-│   ├── date_utils.py     # Funções para manipulação de datas
-│   └── currency_utils.py # Funções para formatação de moeda
-├── services/             # Lógica de negócios
-│   ├── __init__.py
-│   ├── transaction_service.py  # Operações relacionadas a transações
-│   └── report_service.py       # Geração de relatórios
+│   └── finance.db        # Banco de dados SQLite
 └── pages/                # Páginas da interface Streamlit
-    ├── __init__.py
     ├── dashboard.py      # Página de visão geral
     ├── transactions.py   # Página de transações
     └── reports.py        # Página de relatórios
+├── app.py                # Ponto de entrada principal da aplicação
+├── README.md             # Documentação do projeto
 ```
 
 
